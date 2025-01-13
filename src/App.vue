@@ -6,6 +6,7 @@
   <SectionChoose/>
   <SectionMap/>
   <SectionFeedback/>
+  <SectionSubscribe/>
   <Footer/>
 </template>
 
@@ -19,5 +20,6 @@ import SectionChoose from "@/components/SectionChoose.vue";
 import SectionMap from "@/components/SectionMap.vue";
 import Footer from "@/components/Footer.vue";
 import SectionFeedback from "@/components/SectionFeedback.vue";
+import SectionSubscribe from "@/components/SectionSubscribe.vue";
 </script>
 
