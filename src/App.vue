@@ -1,0 +1,27 @@
+<template>
+  <Header/>
+  <SectionHero/>
+  <SectionStatistic/>
+  <SectionFeaturePack/>
+  <SectionChoose/>
+  <SectionMap/>
+  <SectionFeedback/>
+  <Footer/>
+</template>
+
+
+<script setup>
+import Header from "@/components/Header.vue";
+import SectionHero from "@/components/SectionHero.vue";
+import SectionStatistic from "@/components/SectionStatistic.vue";
+import SectionFeaturePack from "@/components/SectionFeaturePack.vue";
+import SectionChoose from "@/components/SectionChoose.vue";
+import SectionMap from "@/components/SectionMap.vue";
+import Footer from "@/components/Footer.vue";
+import SectionFeedback from "@/components/SectionFeedback.vue";
+
+</script>
+
+<style>
+
+</style>
