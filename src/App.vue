@@ -19,9 +19,5 @@ import SectionChoose from "@/components/SectionChoose.vue";
 import SectionMap from "@/components/SectionMap.vue";
 import Footer from "@/components/Footer.vue";
 import SectionFeedback from "@/components/SectionFeedback.vue";
-
 </script>
 
-<style>
-
-</style>
