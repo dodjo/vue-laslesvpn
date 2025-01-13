@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-50">
+  <footer id="help" class="bg-gray-50">
     <div class="container mx-auto  py-10 px-10 lg:px-0">
       <div class="flex lg:flex-row flex-col">
         <div class="lg:mr-28  mb-12">
@@ -9,7 +9,7 @@
             <br/> has unique features and has high security.</p>
           <p class="mt-6 text-gray-500">©2020LaslesVPN</p>
         </div>
-        <div class="flex lg:gap-28 gap-10 lg:ml-auto">
+        <div class="flex flex-wrap lg:gap-28 gap-10 lg:ml-auto">
           <div v-for="menu in menuList" :key="menu">
             <h3 class="text-1xl font-medium mb-6">{{menu.title}}</h3>
             <ul class="flex flex-col gap-6">

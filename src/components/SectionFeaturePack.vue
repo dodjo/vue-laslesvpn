@@ -1,9 +1,11 @@
 
 <template>
-  <section class="container mx-auto flex gap-10 items-center justify-between  py-10 px-10 lg:px-0">
-    <img class="hidden lg:block w-1/2" src="/images/futures.svg" loading="lazy" alt="futures">
-    <div>
-      <h1 class="text-4xl leading-normal font-medium mb-6">
+  <section id="features" class="container mx-auto flex lg:flex-row flex-col gap-10 items-center justify-between  p-5 lg:py-20 lg:px-0">
+    <div class="lg:w-1/2">
+      <img src="/images/futures.svg" loading="lazy" alt="futures">
+    </div>
+    <div class="basis-1/2">
+      <h1 class="text-2xl lg:text-4xl leading-normal font-medium mb-6">
         We Provide Many <br/>
         Features You Can Use
       </h1>

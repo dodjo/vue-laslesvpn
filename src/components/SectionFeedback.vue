@@ -1,7 +1,7 @@
 <template>
-<div class="container mx-auto  py-10 px-10 lg:px-0">
+<div id="testimonials" class="container mx-auto  py-10 px-10 lg:px-0">
   <div>
-    <h2 class="text-4xl leading-normal font-medium mb-6 text-center">
+    <h2 class="text-2xl lg:text-4xl  leading-normal font-medium mb-6 text-center">
       Trusted by Thousands of <br/> Happy Customer
     </h2>
     <p class="mb-12 text-center text-gray-500">These are the stories of our customers who have joined us with great<br/>
@@ -12,8 +12,9 @@
         <div class="swiper-slide flex flex-col p-10 bg-white  rounded-xl border-2 border-gray-200"
         v-for="(feedback, index) in feedbacks" :key="index"
         >
-          <div class="flex gap-4">
-            <img :src="feedback.avatar" class="w-[50px] h-[50px] rounded-full" alt="avatar">
+          <div class="flex gap-4 items-center">
+            <img :src="feedback.avatar" class="block w-[50px] h-[50px] bg-gray-50 rounded-full" alt="avatar">
+
             <div>
               <p class="font-1xl font-medium">{{feedback.name}}</p>
               <p class="text-gray-500">{{feedback.location}}</p>
