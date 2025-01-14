@@ -2,19 +2,17 @@
   <section class="relative h-[100px]">
     <div class="container shadow-xl shadow-gray-100 flex flex-col md:flex-row gap-5 items-center justify-between bg-white rounded-2xl mx-auto py-10 px-10 lg:p-11">
       <div>
-        <h2 class="text-2xl lg:text-4xl leading-normal font-medium mb-6">
-          Subscribe Now for <br/> Get Special Features!
-        </h2>
-        <p class="text-gray-500">Let's subscribe with us and find the fun.</p>
+        <h2
+            class="text-2xl lg:text-4xl leading-normal font-medium mb-6"
+            v-html="$t('subscribe.title')"
+        ></h2>
+        <p class="text-gray-500">{{ $t('subscribe.description') }}</p>
       </div>
       <div class="w-full md:w-auto">
         <button class="text-white w-full bg-primary rounded-lg px-20 py-4 text-base font-medium shadow-2xl shadow-red-400 hover:shadow-xl transition duration-300">
-          Subscribe Now
+          {{ $t('subscribe.button') }}
         </button>
       </div>
-
-
-
     </div>
   </section>
 </template>

@@ -1,12 +1,14 @@
 <template>
 <div id="testimonials" class="container mx-auto  py-10 px-10 lg:px-0">
   <div>
-    <h2 class="text-2xl lg:text-4xl  leading-normal font-medium mb-6 text-center">
-      Trusted by Thousands of <br/> Happy Customer
-    </h2>
-    <p class="mb-12 text-center text-gray-500">These are the stories of our customers who have joined us with great<br/>
-      pleasure when using this crazy feature.
-    </p>
+    <h2
+        class="text-2xl lg:text-4xl leading-normal font-medium mb-6 text-center"
+        v-html="$t('trustedBy.title')"
+    ></h2>
+    <p
+        class="mb-12 text-center text-gray-500"
+        v-html="$t('trustedBy.description')"
+    ></p>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide flex flex-col p-10 bg-white  rounded-xl border-2 border-gray-200"
@@ -39,7 +41,6 @@
         <IconNext/>
       </div>
     </div>
-
   </div>
 </div>
 </template>

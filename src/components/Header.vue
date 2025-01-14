@@ -45,6 +45,12 @@
           </ul>
         </nav>
       </div>
+      <select v-model="$i18n.locale"
+          class="appearance-none border border-primary rounded-full px-4 py-2 lg:px-8 lg:py-3 text-primary text-base font-medium transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+        <option v-for="locale in ['en', 'ru']" :key="locale" :value="locale">
+          {{ locale === 'en' ? 'English' : 'Русский' }}
+        </option>
+      </select>
     </div>
   </header>
 </template>
@@ -84,13 +90,11 @@ const toggleMenu = () => {
 }
 
 window.addEventListener('scroll', () => {
-  // console.log(header.value.classList.add('sh'))
   if (window.scrollY === 0) {
     header.value.classList.remove('shadow-xl', 'shadow-gray-100')
   } else {
     header.value.classList.add('shadow-xl', 'shadow-gray-100')
   }
-
 })
 </script>
 

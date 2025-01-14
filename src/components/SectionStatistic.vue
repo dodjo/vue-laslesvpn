@@ -19,22 +19,25 @@
 import iconUsers from '@/assets/icons/users.svg'
 import iconLocation from '@/assets/icons/location.svg'
 import iconServer from '@/assets/icons/server.svg'
+import {useI18n} from "vue-i18n";
+import {computed} from "vue";
+const { t } = useI18n();
 
-const statistics = [
+const statistics = computed(()=>[
   {
     icon: iconUsers,
     number: 90,
-    title: "Users",
+    title: t('statistics.users'),
   },
   {
     icon: iconLocation,
     number: 30,
-    title: "Locations",
+    title: t('statistics.locations'),
   },
   {
     icon: iconServer,
     number: 50,
-    title: "Servers",
+    title: t('statistics.servers'),
   },
-]
+]);
 </script>

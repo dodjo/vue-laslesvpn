@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Want anything to be easy with LaslesVPN.",
+    "description": "Provide a network for all your needs with ease and fun using <strong>LaslesVPN.</strong> Discover interesting features from us.",
+    "button": "Get Started"
+  },
+  "statistics": {
+    "users": "Users",
+    "locations": "Locations",
+    "servers": "Servers"
+  },
+  "features": {
+    "title": "We Provide Many <br/> Features You Can Use",
+    "description": "You can explore the features that we provide with fun and <br/> have their own functions each feature.",
+    "list": [
+      "Powerful online protection.",
+      "Internet without borders.",
+      "Supercharged VPN.",
+      "No specific time limits."
+    ]
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "description": "Let's choose the package that is best for you and explore it happily and cheerfully.",
+    "plans": {
+      "free": "Free Plan",
+      "standard": "Standard Plan",
+      "premium": "Premium Plan"
+    },
+    "features": {
+      "unlimited_bandwidth": "Unlimited Bandwidth",
+      "encrypted_connection": "Encrypted Connection",
+      "no_traffic_logs": "No Traffic Logs",
+      "works_on_all_devices": "Works on All Devices",
+      "connect_anywhere": "Connect Anywhere",
+      "get_new_features": "Get New Features"
+    },
+    "price_suffix": "/mo",
+    "select_button": "Select"
+  },
+  "globalNetwork": {
+    "title": "Huge Global Network of Fast VPN",
+    "description": "See <span class='font-medium'>LaslesVPN</span> everywhere to make it easier for you when you move locations.",
+    "partners": {
+      "netflix": "Netflix",
+      "reddit": "Reddit",
+      "amazon": "Amazon",
+      "discord": "Discord",
+      "spotify": "Spotify"
+    }
+  },
+  "trustedBy": {
+    "title": "Trusted by Thousands of <br/> Happy Customers",
+    "description": "These are the stories of our customers who have joined us with great <br/> pleasure when using this crazy feature."
+  },
+  "subscribe": {
+    "title": "Subscribe Now for <br/> Get Special Features!",
+    "description": "Let's subscribe with us and find the fun.",
+    "button": "Subscribe Now"
+  },
+  "footer": {
+    "description": "LaslesVPN is a private virtual network that <br/> has unique features and has high security.",
+    "copyright": "©2020 LaslesVPN",
+    "menu": {
+      "product": "Product",
+      "download": "Download",
+      "pricing": "Pricing",
+      "locations": "Locations",
+      "server": "Server",
+      "countries": "Countries",
+      "blog": "Blog",
+      "engage": "Engage",
+      "laslesvpn": "LaslesVPN",
+      "faq": "FAQ",
+      "tutorials": "Tutorials",
+      "about_us": "About Us",
+      "privacy_policy": "Privacy Policy",
+      "terms_of_service": "Terms of Service",
+      "earn_money": "Earn Money",
+      "affiliate": "Affiliate",
+      "become_partner": "Become Partner"
+    }
+  }
+}
