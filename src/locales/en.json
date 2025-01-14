@@ -1,4 +1,13 @@
 {
+  "menu": {
+    "about": "About",
+    "features": "Features",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "help": "Help",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
   "hero": {
     "title": "Want anything to be easy with LaslesVPN.",
     "description": "Provide a network for all your needs with ease and fun using <strong>LaslesVPN.</strong> Discover interesting features from us.",

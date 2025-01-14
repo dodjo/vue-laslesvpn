@@ -7,13 +7,19 @@
       <nav class="hidden lg:block">
         <ul class="flex gap-7">
           <li v-for="menu in menuList" :key="menu">
-            <a :href="menu.url" class="text-gray-900 p-3 hover:text-primary transition duration-300">{{menu.title}}</a>
+            <a :href="menu.url" class="text-gray-900 p-3 hover:text-primary transition duration-300">
+              {{ $t(`menu.${menu.title.toLowerCase()}`) }}
+            </a>
           </li>
         </ul>
       </nav>
       <div class="flex gap-1 lg:block hidden">
-        <button class="text-gray-900 px-4 py-2 lg:px-8 lg:py-3 font-medium hover:text-rose-500 transition duration-300">Sign In</button>
-        <button class="border border-primary rounded-full px-4 py-2 lg:px-8 lg:py-3 text-primary text-base font-medium hover:bg-primary hover:text-white hover:shadow-2xl hover:shadow-red-300 transition duration-300">Sign Up</button>
+        <button class="text-gray-900 px-4 py-2 lg:px-8 lg:py-3 font-medium hover:text-rose-500 transition duration-300">
+          {{$t('menu.signIn')}}
+        </button>
+        <button class="border border-primary rounded-full px-4 py-2 lg:px-8 lg:py-3 text-primary text-base font-medium hover:bg-primary hover:text-white hover:shadow-2xl hover:shadow-red-300 transition duration-300">
+          {{$t('menu.signUp')}}
+        </button>
       </div>
       <div class="block lg:hidden">
         <button class="text-gray-900 p-3 hover:text-primary transition duration-300"
@@ -33,21 +39,27 @@
           </button>
           <ul class="flex flex-col gap-7">
             <li v-for="menu in menuList" :key="menu">
-              <a :href="menu.url" @click="toggleMenu" class="text-gray-900 p-3 hover:text-primary transition duration-300">{{menu.title}}</a>
+              <a :href="menu.url" @click="toggleMenu" class="text-gray-900 p-3 hover:text-primary transition duration-300">
+                {{ $t(`menu.${menu.title.toLowerCase()}`) }}
+              </a>
             </li>
             <div class="border-b border-gray-200"></div>
             <li>
-              <button class="text-gray-900 px-3 hover:text-primary transition duration-300">Sign In</button>
+              <button class="text-gray-900 px-3 hover:text-primary transition duration-300">
+                {{$t('menu.signIn')}}
+              </button>
             </li>
             <li>
-              <button class="text-gray-900 px-3 hover:text-primary transition duration-300">Sign Up</button>
+              <button class="text-gray-900 px-3 hover:text-primary transition duration-300">
+                {{$t('menu.signUp')}}
+              </button>
             </li>
           </ul>
         </nav>
       </div>
       <select v-model="$i18n.locale"
-          class="appearance-none border border-primary rounded-full px-4 py-2 lg:px-8 lg:py-3 text-primary text-base font-medium transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
-        <option v-for="locale in ['en', 'ru']" :key="locale" :value="locale">
+          class="appearance-none border border-primary rounded-full px-4 py-2 lg:px-5 lg:py-3 text-primary text-base font-medium transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+        <option v-for="locale in ['en', 'ru']" :key="locale" :value="locale" class="text-gray-900">
           {{ locale === 'en' ? 'English' : 'Русский' }}
         </option>
       </select>

@@ -8,7 +8,7 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12">
       <div
-          class="group :lg:min-h-[760px] flex flex-col gap-7 bg-white text-center rounded-xl py-10 lg:p-5 border-2"
+          class="group :lg:min-h-[760px] flex flex-col gap-7 bg-white text-center rounded-xl py-10 px-3 lg:p-5 border-2"
           :class="[activePlan === i ? 'border-primary' : 'border-border-color']"
           v-for="(plan, i) in plans"
           :key="i"
