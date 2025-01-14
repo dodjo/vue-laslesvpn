@@ -1,5 +1,5 @@
 <template>
-  <header ref="header" class="sticky top-0 bg-white z-50">
+  <header ref="header" class="main-header sticky top-0 bg-white z-50">
     <div class="container mx-auto flex justify-between items-center p-5 lg:py-10 lg:px-0">
       <a class="block basis-36" href="#">
         <img src="/images/logo.svg" width="150" alt="logo">
@@ -56,7 +56,8 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
+import {onBeforeUnmount, onMounted, ref} from "vue";
+import debounce from "@/util/debounce.js";
 
 const header = ref(null)
 
@@ -85,20 +86,46 @@ const menuList = [
 
 const isShowMenu = ref(false)
 
+let oldScrollPosition = 0
+
 const toggleMenu = () => {
   isShowMenu.value = !isShowMenu.value
 }
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY === 0) {
+const scrollEvent = () => {
+  if (window.scrollY === 0 && header.value.classList.contains('shadow-xl')) {
     header.value.classList.remove('shadow-xl', 'shadow-gray-100')
   } else {
     header.value.classList.add('shadow-xl', 'shadow-gray-100')
   }
+
+  if (window.scrollY > oldScrollPosition) {
+    header.value.classList.add('main-header--hide')
+  } else {
+    header.value.classList.remove('main-header--hide')
+  }
+  oldScrollPosition = window.scrollY
+}
+
+
+onMounted(() => {
+  window.addEventListener('scroll', debounce(scrollEvent, 100))
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', scrollEvent)
 })
 </script>
 
 <style>
+.main-header {
+  transform: translateY(0px);
+  transition: all 0.2s ease-in-out;
+}
+
+.main-header--hide {
+  transform: translateY(-150px);
+}
+
 @keyframes slideRight {
   0% {
     transform: translateX(200%);
