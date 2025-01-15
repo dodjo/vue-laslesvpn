@@ -57,12 +57,7 @@
           </ul>
         </nav>
       </div>
-      <select v-model="$i18n.locale"
-          class="appearance-none border border-primary rounded-full px-4 py-2 lg:px-5 lg:py-3 text-primary text-base font-medium transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
-        <option v-for="locale in ['en', 'ru']" :key="locale" :value="locale" class="text-gray-900">
-          {{ locale === 'en' ? 'English' : 'Русский' }}
-        </option>
-      </select>
+    <LangSwitcher/>
     </div>
   </header>
 </template>
@@ -70,6 +65,7 @@
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
 import debounce from "@/util/debounce.js";
+import LangSwitcher from "@/components/LangSwitcher.vue";
 
 const header = ref(null)
 

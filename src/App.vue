@@ -21,5 +21,13 @@ import SectionMap from "@/components/SectionMap.vue";
 import Footer from "@/components/Footer.vue";
 import SectionFeedback from "@/components/SectionFeedback.vue";
 import SectionSubscribe from "@/components/SectionSubscribe.vue";
+import Tr from "@/service/i18n/translation.js";
+import {onMounted} from "vue";
+
+onMounted(async () => {
+  const locale = await Tr.getUserLocale();
+  await Tr.setLanguage(locale);
+})
+
 </script>
 
