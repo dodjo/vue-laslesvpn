@@ -7,7 +7,7 @@ import path from 'path';
 
 console.log(path.resolve(__dirname, 'src'))
 export default defineConfig({
-  base: '/',
+  base: '/lasles-vpn',
   plugins: [vue(), svgLoader()],
   resolve: {
     alias: {
