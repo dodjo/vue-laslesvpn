@@ -7,6 +7,7 @@ import path from 'path';
 
 console.log(path.resolve(__dirname, 'src'))
 export default defineConfig({
+  base: '/',
   plugins: [vue(), svgLoader()],
   resolve: {
     alias: {
