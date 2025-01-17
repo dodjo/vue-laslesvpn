@@ -8,7 +8,7 @@
         <component :is="statistic.icon"/>
       </div>
       <div>
-        <h3 class="text-2xl font-medium">{{statistic.number}}+</h3>
+        <div class="text-2xl font-medium">{{statistic.number}}+</div>
         <p class="text-gray-500">{{statistic.title}}</p>
       </div>
     </div>

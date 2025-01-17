@@ -1,5 +1,6 @@
 <template>
   <select @change="changeLang"
+      aria-label="Select language"
       class="appearance-none border border-primary rounded-full px-4 py-2 lg:px-5 lg:py-3 text-primary text-base font-medium transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
     <option v-for="localeItem in Tr.supportLanguages"
         :key="localeItem"
